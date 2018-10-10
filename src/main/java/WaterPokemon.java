@@ -61,6 +61,15 @@ public class WaterPokemon extends Pokemon {
      * Implement this.
      */
     public boolean attack(final Pokemon opponent) {
+        if (opponent.equals(WaterPokemon)) {
+            return true;
+        }
+        else if (opponent.equals(FirePokemon)) {
+            return false;
+        }
+        else if (opponent.equals(ElectricPokemon)) {
+            return true;
+        }
         return false;
     }
 
